@@ -8,11 +8,9 @@ const session = require("express-session");
 const passport = require("passport");
 const passportLocalMongoose = require("passport-local-mongoose");
 const GoogleStrategy = require( 'passport-google-oauth2' ).Strategy;
-//const md5 = require("md5");
-// const bcrypt = require('bcrypt');
-// const saltRounds = 2;
+
 const app = express();
-//console.log(process.env.API_KEY);
+
 app.use(express.static("public"));
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
